@@ -7,7 +7,10 @@ logo:
 author:
   image: 'authorimage.jpg'
   greetings: "Hi there! My name is Zenit Kovačević. I'm a Software Engineer with a passion for Search Technologies and Clean Code. It’s nice to meet you."
-favicon: 'assets/images/favicon.ico'
+favicon: 'assets/images/favicon/favicon.ico'
+favicon_32: 'assets/images/favicon/favicon-16x16.ico'
+favicon_64: 'assets/images/favicon/favicon-32x32.ico'
+favicon_apple_touch: 'assets/images/favicon/android-touch-icon.png'
 baseurl: 
 production_url: https://zenitk.com
 disqus: 'justgoodthemes'
