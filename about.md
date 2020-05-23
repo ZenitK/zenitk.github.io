@@ -4,12 +4,12 @@ title: About
 featured_image: /assets/images/pages/about.jpg
 ---
 
-Charles Lavoie is a senior developer from Vilnius, Lithuania. After graduating from The College with a degree in **Computer Science**, he worked for three small web shops where he honed his development skills and love for JavaScript.
+I am a Senior Software Engineer working in the Search Team (Endeavour) at [DigitecGalaxus AG](https://www.galaxus.ch/) based in Zürich, Switzerland. Here I discovered my love for **Search Technology**, **Information Retrieval**, and recently also **NLP**. These disciplines combine mathematics, statistics, linguistics, and software engineering - a powerful combination that brings a lot of value for people. Improving the search results even by **1%** on a big scale has a massive effect overall and it warms my developer heart to know that what I do brings value to the customer and the company.
 
-His work has been recognized by Communication Arts, IBM, How, ID, IdN, AIGA, Effie, Archive, Graphis, AdFed and Rockport. **Net** magazine named him a person to watch in 2018.
+Primarily. I work with **.NET Core C#** and **Elasticsearch**. However, I firmly believe that these technologies are simply tools that bring us to our goals, and that we as professionals are obliged to understand the principles behind them. We should guide our decisions and communication based on these principles. 
 
->The world always seems brighter when you’ve just made something that wasn’t there before. <cite>Neil Gaiman</cite>
+As a software engineer, I am a strong proponent in **quality over quantity** and stand behind the tenets of [software craftmanship](https://en.wikipedia.org/wiki/Software_craftsmanship). Work half-done usually costs twice as much later with compound interest. 
 
-As a hobby, Daniel authors the most influential JavaScript blog in Lithuania with over 100,000 page views a month. He lives in Vilnius with his beautiful wife, two boys and one girl.
+As you might have noticed on the pictures, in my free time I like to dissapear in the mountains for ski touring, hiking, or rock climbing. My dog [Wolfie](https://photos.app.goo.gl/QNWSkYm5iZqJ5HCo6) is an obligatory companion.
 
 *Thank You for reading!*
