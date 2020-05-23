@@ -10,7 +10,7 @@ author:
 favicon: 'assets/images/favicon/favicon.ico'
 favicon_32: 'assets/images/favicon/favicon-16x16.ico'
 favicon_64: 'assets/images/favicon/favicon-32x32.ico'
-favicon_apple_touch: 'assets/images/favicon/android-touch-icon.png'
+favicon_apple_touch: 'assets/images/favicon/apple-touch-icon.png'
 baseurl: 
 production_url: https://zenitk.com
 disqus: 'justgoodthemes'
