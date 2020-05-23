@@ -14,12 +14,12 @@ favicon_apple_touch: 'assets/images/favicon/apple-touch-icon.png'
 baseurl: 
 production_url: https://zenitk.com
 disqus: 'zenitk'
-mailchimp_url: '//justgoodthemes.us3.list-manage.com/subscribe/post?u=78f1bab16028354caeb23aecd&amp;id=4a7330d117'
+#mailchimp_url: '//justgoodthemes.us3.list-manage.com/subscribe/post?u=78f1bab16028354caeb23aecd&amp;id=4a7330d117'
 
 # Contact form setings
 email: zenit@zenitk.com
-contact_page_description: "Horace theme comes with a contact form built-in. You can use this form with Formspree service and get up to 50 submissions for free. Also, you can easily switch to another service if you want."
-thankyou_page_description: "Your message has been successfully sent. We will contact you very soon!"
+contact_page_description: "Would you like to get in touch? Write a message here or contact me on ()[LinkedIn]"
+thankyou_page_description: "Your message has been successfully sent. I'll contact you very soon!"
 
 # Social links
 #twitter: 'justgoodthemes'
