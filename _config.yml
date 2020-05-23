@@ -1,12 +1,12 @@
 # Site setings
-name: 'Search Relevance and Clean Code'
-#description: 'Search Technology and Software Engineering'
+name: 'Zenit Kovačević'
+description: 'Search Relevance and Clean Code'
 meta_description: 'Jekyll template, minimal style, perfect for bloggers.'
 logo:
 # Author image is used in site sidebar and greetings in the home page hero text
 author:
   image: 'authorimage.jpg'
-  greetings: "Hi there! My name is Zenit Kovačević. I'm a Software Engineer with a passion for Search Technologies and Clean Code. It’s nice to meet you."
+  greetings: "Welcome! My name is Zenit Kovačević. I'm a Software Engineer with a passion for Search Technologies and Clean Code. It’s nice to meet you."
 favicon: 'assets/images/favicon/favicon.ico'
 favicon_32: 'assets/images/favicon/favicon-16x16.ico'
 favicon_64: 'assets/images/favicon/favicon-32x32.ico'
@@ -19,7 +19,7 @@ mailchimp_url: '//justgoodthemes.us3.list-manage.com/subscribe/post?u=78f1bab160
 ga_analytics: 
 
 # Contact form setings
-email: zenitkovacevic@gmail.com
+email: zenit@zenitk.com
 contact_page_description: "Horace theme comes with a contact form built-in. You can use this form with Formspree service and get up to 50 submissions for free. Also, you can easily switch to another service if you want."
 thankyou_page_description: "Your message has been successfully sent. We will contact you very soon!"
 
@@ -42,8 +42,8 @@ navigation:
     url: /
   - text: About
     url: /about
-  - text: Style Guide
-    url: /style-guide
+#  - text: Style Guide
+#    url: /style-guide
   - text: Contact Me
     url: /contact
 #  - text: Search
