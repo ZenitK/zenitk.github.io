@@ -222,6 +222,10 @@
 }
 
 @media only screen and (max-width: 800px) {
+  .menu--opened .menu {
+    font-size: 1.222rem;
+  }
+
   .menu--opened .site {
     height: 100%;
     left: 0;

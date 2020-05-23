@@ -117,16 +117,18 @@
   margin: 0;
   padding: 0;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .menu-item {
   border-top: 1px solid $gray-dark;
-  padding: 0.5em 0;
 }
 
 .menu-item a {
   color: $gray-light;
   text-decoration: none;
+  display: block;
+  padding: 0.5em 0;
 }
 
 .social-links {
