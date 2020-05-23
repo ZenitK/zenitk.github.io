@@ -135,6 +135,7 @@
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+  justify-content: center;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -150,13 +151,13 @@
   display: -webkit-flex;
   display: flex;
   margin: 0 10px 0.5em 0;
-  padding: 0 3px;
+  padding: 0 21px;
   text-decoration: none;
 }
 
 .social-links svg {
   fill: currentColor;
-  height: 18px;
+  height: 27px;
 }
 
 a[href*="twitter.com"] svg,

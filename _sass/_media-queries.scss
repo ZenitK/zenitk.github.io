@@ -153,8 +153,14 @@
     -ms-flex-pack: center;
     justify-content: center;
   }
+
   .social-links a {
     margin: 0 5px 0.5em;
+    padding: 0 3px;
+  }
+
+  .social-links svg {
+    height: 18px;
   }
 }
 
