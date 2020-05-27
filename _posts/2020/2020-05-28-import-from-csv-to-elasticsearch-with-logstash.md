@@ -6,6 +6,7 @@ featured_image_thumbnail:
 featured_image:  assets/posts/2020/import-from-csv-to-elasticsearch-with-logstash/csv-to-logstash.png
 featured: false
 hidden: false
+category: Search
 ---
 
 Frequently when we want to test out a new feature in Elasticsearch we need some data to play with. Unfortunately, Kibana and Elasticsearch don't provide an easy, out-of-the-box way to simply import a CSV. 
