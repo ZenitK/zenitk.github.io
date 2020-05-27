@@ -8,13 +8,13 @@ featured: false
 hidden: false
 ---
 
-Frequently when we want to test out a new feature in Elasticsearch we need some data to play with.
-Unfortunately, Kibana and Elasticsearch don't provide an easy, out-of-the-box way to simply import a CSV. 
+Frequently when we want to test out a new feature in Elasticsearch we need some data to play with. Unfortunately, Kibana and Elasticsearch don't provide an easy, out-of-the-box way to simply import a CSV. 
 
 That's why there is Logstash in the known E**L**K stack. Its job is to *watch* to a data source,
 *process* incoming data, and *output* it into specified sources. Once started, it usually stays on and watches for any changes in the data source.
 
-Here, I'll guide you step by step on how to import a sample CSV into Elasticsearch 7.x using Logstash 7.x. By the end, you should be able to tweak the provided example to fit your own needs.
+Here, I'll guide you step by step on how to import a sample CSV into Elasticsearch 7.x using Logstash 7.x. By the end, you should be able to tweak the provided example to fit your own needs. There will be plenty of links to the official documentation, but that's just for your own convenience. 
+
 
 ## Sample CSV
 
@@ -198,7 +198,7 @@ Now, the [mutate](https://www.elastic.co/guide/en/logstash/current/plugins-filte
 
 Here, we're renaming **dead** to **is_dead**, because it's common courtesy to name your booleans clearly. 
 
-Then, we rename **id** to **[@metadata][id]** because we don't want the id to be saved like a normal field in Elasticsearch, since we would like to use it as an actual document id. What we actually do here is store the id into a temporary variable that is not being passed on in the end output. We use this variable later in the **Output** section. See the [Metadata](https://www.elastic.co/blog/logstash-metadata) blog at Elastic for more information.
+Then, we rename **id** to **[@metadata][id]** because we don't want the id to be saved like a normal field in Elasticsearch, since we would like to use it as an actual document id. What we actually do here is store the id into a temporary variable that is not being passed on in the end output. We use this variable later in the [Output](#metadata-document-id) section. See the [Metadata](https://www.elastic.co/blog/logstash-metadata) blog at Elastic for more information.
 
 Similar to the date field, in [convert](https://www.elastic.co/guide/en/logstash/current/plugins-filters-mutate.html#plugins-filters-mutate-convert) we need to tell logstash that the string "true" is actually a boolean. No magic happens on its own.
 
@@ -223,13 +223,64 @@ output {
 ```
 We output the data both into the standard output (for debugging purposes) and Elasticsearch.
 
-Now in the **elasticsearch** section we say with **document_id** that we want to use our metadata field (mentioned above in the filter section)
+Now in the **elasticsearch** section we say with **<span id="metadata-document-id">document_id</span>** that we want to use our metadata field. With the <mark>%{ ... }</mark> syntax we just reference a variable.
 
 If you have a custom certificate on your cluster and/or need credentials the commented section has the keywords you'll need fo access your cluster.
 
 ## Run Logstash
 
+Now that we finally have our logstash configuration file we can finally run it.
+
+```bash
+./logstash -f /home/zenitk/import-hackernews.conf
+```
+
+If everything runs smoothly (disclaimer: usually it doesn't) you should see something like this:
+
+```
+
+. . .
+
+{
+    "post_date" => 2015-08-11T14:58:21.000Z,
+       "author" => "Datafloq",
+        "score" => "1",
+           "by" => "Datafloq",
+         "text" => nil,
+      "is_dead" => true,
+      "deleted" => nil,
+         "time" => "1439305101",
+        "title" => "5 Reasons Why Small Businesses Need Not Be Shy of Big Data",
+          "url" => "https://datafloq.com/read/5-reasons-small-businesses-need-not-shy-big-data/1390"
+}
+
+. . .
+```
+
+Now we can do a check in Kibana:
+```JSON
+# check the data types
+GET hackernews_import/_mapping
+
+# check if all the rows are imported
+GET hackernews_import/_count
+```
+
+Note that I didn't create the index first, but rather let Elasticsearch dynamically define the fields. 
+This is fine for testing purposes or when just trying out the logstash script, but for production you should strongly consider creating the index first with a dynamic mapping set to strict. This is however a topic on its own.
+
+Often with CSVs that contain a lot of text you'll have some parsing trouble. If you had a **stdout** output it will usually show you when and where it failed (albeit criptically sometimes). You can correct these rows and simply place them at the end of the file while running Logstash. It will simply index the row into Elasticsearch.
 
 ## Summary
 
-Other sources:
+Now we wen't through the whole process of importing CSV data into Elasticsearch. 
+
+Logstash can feel fiddly in the beginning, but once you get familiar with its quirks it can be a very powerful and easy tool for quick imports. I hope that after going through this blog you feel armed to tackle some imports on your own. For example, how about importing a JSON document, or from a DB? I'm sure you'll know where to start.
+
+If you have some feedback please hit the comment section! 
+
+## Other sources
+
+If you're more of a video person, here is a similar (but a bit older) tutorial:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rKy4sFbIZ3U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
