@@ -53,6 +53,9 @@ plugins_dir:
   - jekyll-seo-tag
   - jekyll-sitemap
 
+plugins:
+  - jemoji  
+
 # Pagination
 paginate: 5
 paginate_path: /page:num/
