@@ -13,14 +13,15 @@ Frequently when we want to test out a new feature in Elasticsearch we need some 
 That's why there is Logstash in the known E**L**K stack. Its job is to *watch* to a data source,
 *process* incoming data, and *output* it into specified sources. Once started, it usually stays on and watches for any changes in the data source.
 
-Here, I'll guide you step by step on how to import a sample CSV into Elasticsearch 7.x using Logstash 7.x. By the end, you should be able to tweak the provided example to fit your own needs. There will be plenty of links to the official documentation, but that's just for your own convenience. 
+Here, I'll guide you step by step on how to import a sample CSV into Elasticsearch 7.x using Logstash 7.x. By the end, you should be able to tweak the provided example to fit your own needs. There will be plenty of links to the official documentation, but that's just for convenience. 
 
 
 ## Sample CSV
 
-For this blog, I've imported the usual [Hackernews stories](https://news.ycombinator.com/) from [BigQuery Public Data Sets](https://cloud.google.com/bigquery/public-data). You can download the CSV [here](/assets/posts/2020/import-from-csv-to-elasticsearch-with-logstash/hackernews.csv).
+For this blog, I've imported the usual [Hackernews stories](https://news.ycombinator.com/) from [BigQuery Public Data Sets](https://cloud.google.com/bigquery/public-data). 
+The CSV is available [here](/assets/posts/2020/import-from-csv-to-elasticsearch-with-logstash/hackernews.csv).
 
-I've imported the schema 1:1 as it is in BigQuery right now. It looks like this:
+The schema looks like this:
 
 | Field name  | Type      | Description                                              |
 |-------------|-----------|----------------------------------------------------------|
@@ -50,7 +51,7 @@ Here are some sample rows (for readability purposes not all columns are selected
 ## Prepare Logstash Configuration
 
 First, follow the [instructions on installing Logstash](https://www.elastic.co/guide/en/logstash/current/installing-logstash.html).
-Then, take a brief look at this full logstash configuration script. I'll explain the details further down. You can download it [here](/assets/posts/2020/import-from-csv-to-elasticsearch-with-logstash/import-hackernews.conf).
+Then, take a brief look at this full logstash configuration script. I'll explain the details further down. The script can be downloaded [here](/assets/posts/2020/import-from-csv-to-elasticsearch-with-logstash/import-hackernews.conf).
 
 ```conf
 input {
@@ -113,7 +114,8 @@ output {
 }
 ```
 
-As expected, each logstash configuration file is defined with the three main elements: **input**, **filter**, and **output**. More information can be found  here in the [documentation](https://www.elastic.co/guide/en/logstash/current/configuration-file-structure.html).
+As expected, each logstash configuration file is defined with the three main elements: **input**, **filter**, and **output**. 
+More information can be found here in the [documentation](https://www.elastic.co/guide/en/logstash/current/configuration-file-structure.html).
 
 ### Input
 
@@ -225,7 +227,7 @@ We output the data both into the standard output (for debugging purposes) and El
 
 Now in the **elasticsearch** section we say with **<span id="metadata-document-id">document_id</span>** that we want to use our metadata field. With the <mark>%{ ... }</mark> syntax we just reference a variable.
 
-If you have a custom certificate on your cluster and/or need credentials the commented section has the keywords you'll need fo access your cluster.
+If you have a custom certificate on your cluster and/or need credentials the commented section has the keywords you'll need to access your cluster.
 
 ## Run Logstash
 
@@ -266,18 +268,17 @@ GET hackernews_import/_mapping
 GET hackernews_import/_count
 ```
 
-Note that I didn't create the index first, but rather let Elasticsearch dynamically define the fields. 
-This is fine for testing purposes or when just trying out the logstash script, but for production you should strongly consider creating the index first with a dynamic mapping set to strict. This is however a topic on its own.
+Note that I didn't create the index first, but rather let Elasticsearch dynamically define the fields. This is fine for testing purposes or when just trying out the logstash script, but for production, you should strongly consider creating the index first with a dynamic mapping set to strict. This is however a topic on its own.
 
-Often with CSVs that contain a lot of text you'll have some parsing trouble. If you had a **stdout** output it will usually show you when and where it failed (albeit criptically sometimes). You can correct these rows and simply place them at the end of the file while running Logstash. It will simply index the row into Elasticsearch.
+Often with CSVs that contain a lot of text, there will be trouble with parsing. If you had a **stdout** output it will usually show you when and where it failed (although cryptically sometimes). These rows can be corrected and simply placed at the end of the file while running Logstash. 
 
 ## Summary
 
-Now we wen't through the whole process of importing CSV data into Elasticsearch. 
+Now we went through the whole process of importing CSV data into Elasticsearch. 
 
-Logstash can feel fiddly in the beginning, but once you get familiar with its quirks it can be a very powerful and easy tool for quick imports. I hope that after going through this blog you feel armed to tackle some imports on your own. For example, how about importing a JSON document, or from a DB? I'm sure you'll know where to start.
+Logstash can feel fiddly in the beginning, but once you get familiar with its quirks it can be a potent and easy tool for quick imports. I hope that after going through this blog you feel well armed to tackle some imports on your own. For instance, how about importing a JSON document? Or from a DB? I'm assured you'll know where to start.
 
-If you have some feedback please hit the comment section! 
+Please hit the comment section if you have some questions or feedback! 
 
 ## Other sources
 
