@@ -18,7 +18,7 @@ Here, I'll guide you step by step on how to import a sample CSV into Elasticsear
 
 ## Sample CSV
 
-For this blog, I've imported the usual [Hackernews stories](https://news.ycombinator.com/) from [BigQuery Public Data Sets](https://cloud.google.com/bigquery/public-data). You can download the CSV [here](/assets/posts/import-from-csv-to-elasticsearch-with-logstash/hackernews.csv).
+For this blog, I've imported the usual [Hackernews stories](https://news.ycombinator.com/) from [BigQuery Public Data Sets](https://cloud.google.com/bigquery/public-data). You can download the CSV [here](/assets/posts/2020/import-from-csv-to-elasticsearch-with-logstash/hackernews.csv).
 
 I've imported the schema 1:1 as it is in BigQuery right now. It looks like this:
 
@@ -50,7 +50,7 @@ Here are some sample rows (for readability purposes not all columns are selected
 ## Prepare Logstash Configuration
 
 First, follow the [instructions on installing Logstash](https://www.elastic.co/guide/en/logstash/current/installing-logstash.html).
-Then, take a brief look at this full logstash configuration script. I'll explain the details further down.
+Then, take a brief look at this full logstash configuration script. I'll explain the details further down. You can download it [here](/assets/posts/2020/import-from-csv-to-elasticsearch-with-logstash/import-hackernews.conf).
 
 ```conf
 input {
