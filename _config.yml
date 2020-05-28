@@ -12,7 +12,7 @@ favicon_32: 'assets/images/favicon/favicon-16x16.ico'
 favicon_64: 'assets/images/favicon/favicon-32x32.ico'
 favicon_apple_touch: 'assets/images/favicon/apple-touch-icon.png'
 baseurl: 
-production_url: https://zenitk.com
+production_url: https://www.zenitk.com
 disqus: 'zenitk'
 #mailchimp_url: '//justgoodthemes.us3.list-manage.com/subscribe/post?u=78f1bab16028354caeb23aecd&amp;id=4a7330d117'
 
@@ -52,6 +52,9 @@ plugins_dir:
   - jekyll-paginate
   - jekyll-seo-tag
   - jekyll-sitemap
+
+plugins:
+  - jemoji  
 
 # Pagination
 paginate: 5

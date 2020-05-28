@@ -1,6 +1,7 @@
 source "https://rubygems.org"
 
 source "https://rubygems.org"
+gem 'jemoji'
 gem 'github-pages'
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
