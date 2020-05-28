@@ -15,6 +15,7 @@ baseurl:
 production_url: https://www.zenitk.com
 disqus: 'zenitk'
 #mailchimp_url: '//justgoodthemes.us3.list-manage.com/subscribe/post?u=78f1bab16028354caeb23aecd&amp;id=4a7330d117'
+ga_analytics: UA-167578302-1
 
 # Contact form setings
 email: zenit@zenitk.com
