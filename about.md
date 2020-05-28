@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: About Me
 featured_image: /assets/images/pages/about.jpg
 ---
 
@@ -10,6 +10,11 @@ Primarily. I work with **.NET Core C#** and **Elasticsearch**. However, I firmly
 
 As a software engineer, I am a strong proponent in **quality over quantity** and stand behind the tenets of [software craftmanship](https://en.wikipedia.org/wiki/Software_craftsmanship). Work half-done usually costs twice as much later with compound interest. 
 
-As you might have noticed on the pictures, in my free time I like to dissapear in the mountains for ski touring, hiking, or rock climbing. My dog [Wolfie](https://photos.app.goo.gl/QNWSkYm5iZqJ5HCo6) is an obligatory companion.
+Originally I come from Bosnia & Herzegowina, and got my BSc. in Software Engineering at the [Czech Technical University](https://www.cvut.cz/en) in the beautiful city of Prague.
+
+As you might have noticed on the pictures, in my free time I like to dissapear in the mountains for ski touring, hiking, or rock climbing. 
+My dog Wolfie is an obligatory companion. He's quite independent and doesn't mind me joining him. 
+
+{% include image-caption.html imageurl="/assets/images/posts/2020/hello-world/Wolfie.jpeg#wide" title="Wolfie" caption="Wolfie in his element" %}
 
 *Thank You for reading!*
