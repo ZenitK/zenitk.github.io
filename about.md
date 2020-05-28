@@ -15,6 +15,6 @@ Originally I come from Bosnia & Herzegowina, and got my BSc. in Software Enginee
 As you might have noticed on the pictures, in my free time I like to dissapear in the mountains for ski touring, hiking, or rock climbing. 
 My dog Wolfie is an obligatory companion. He's quite independent and doesn't mind me joining him. 
 
-{% include image-caption.html imageurl="/assets/images/posts/2020/hello-world/Wolfie.jpeg#wide" title="Wolfie" caption="Wolfie in his element" %}
+{% include image-caption.html imageurl="/assets/images/Wolfie.jpeg#wide" title="Wolfie" caption="Wolfie in his element" %}
 
 *Thank You for reading!*
