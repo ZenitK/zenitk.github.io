@@ -4,8 +4,8 @@ title: 'Import from CSV to Elasticsearch using Logstash'
 tags: [Logstash, Elasticsearch]
 featured_image_thumbnail:
 featured_image:  assets/posts/2020/import-from-csv-to-elasticsearch-with-logstash/csv-to-logstash.png
-featured: false
-hidden: false
+featured: true
+hidden: true
 category: Search
 ---
 
