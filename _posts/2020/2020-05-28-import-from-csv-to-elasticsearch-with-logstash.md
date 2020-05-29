@@ -3,10 +3,11 @@ layout: post
 title: 'Import from CSV to Elasticsearch using Logstash'
 tags: [Logstash, Elasticsearch]
 featured_image_thumbnail:
-featured_image:  assets/posts/2020/import-from-csv-to-elasticsearch-with-logstash/csv-to-logstash.png
+featured_image:  /assets/posts/2020/import-from-csv-to-elasticsearch-with-logstash/csv-to-logstash.png
 featured: true
 hidden: true
-category: Search
+category: 'Search'
+description: 'A step-by-step guide on importing data from a CSV file to Elasticsearch'
 ---
 
 Frequently when we want to test out a new feature in Elasticsearch we need some data to play with. Unfortunately, Kibana and Elasticsearch don't provide an easy, out-of-the-box way to simply import a CSV. 
