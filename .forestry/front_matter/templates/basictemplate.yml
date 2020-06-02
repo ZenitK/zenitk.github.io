@@ -37,3 +37,5 @@ fields:
   config:
     required: false
   label: category
+pages:
+- _posts/2020/autocomplete-search-history-with-elasticsearch-7.x.md
