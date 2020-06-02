@@ -17,3 +17,9 @@ fields:
 - type: file
   name: featured_image
   label: featured_image
+- name: hidden
+  type: boolean
+  label: hidden
+- name: featured
+  type: boolean
+  label: featured
