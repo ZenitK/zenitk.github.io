@@ -1,0 +1,19 @@
+---
+label: BasicTemplate
+hide_body: false
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: title
+  label: title
+- type: list
+  name: tags
+  label: tags
+- type: file
+  name: featured_image_thumbnail
+  label: featured_image_thumbnail
+- type: file
+  name: featured_image
+  label: featured_image
