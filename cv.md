@@ -20,13 +20,13 @@ Working as a Fullstack Developer in a small, agile, cross-functional search team
 
 - Solution Architect for new **search-as-you-type** suggestions based on user search logs. Integration with **Google Analytics** and in-house tracking in **BigQuery**.
 
-- Solution Architect for an initiative where we reduced the 0-result rate from 12% to 4% while maintaining the same average click-through-rate through an improved **spelling correction** and **query relaxation**. This included working closely with data scientists and frequent AB testing.
+- Solution Architect for an initiative where we reduced the 0-result rate from 12% to 4% while maintaining the same average click-through-rate through an improved **spelling correction** and **query relaxation**. This included working closely with data scientists and frequent AB testing
 
-- Writing, refining, and prioritizing user stories with other team members and Product Owner.
+- Writing, refining, and prioritizing user stories with other team members and the Product Owner.
 
 - Solution Architect for a data pipeline from a monolithic **SQL Server** to **Elasticsearch**
 
-- Implementing frontend features with a **React.js** and a **node / GraphQl** layer inbetween
+- Implementing frontend features with a **React.js** and a **Node / GraphQl** layer inbetween
 
 - Organizing internal Workshops and supporting other teams with **Elasticsearch** for various use-cases
 
@@ -121,15 +121,12 @@ it in various formats for further analysis, primarily for medical purposes. The 
 
 ## Personal Information
 
-Date of birth: **6th July 1989**
+- Date of birth: **6th July 1989**
+- Residence: **Schlieren, Kanton Zurich, Switzerland**
+- Residence Permit: **C - permanent residence**
+- Nationality: **Bosnia & Herzegowina**
 
-Residence: **Schlieren, Kanton Zurich, Switzerland**
-
-Residence Permit: **C - permanent residence**
-
-Nationality: **Bosnia & Herzegowina**
-
-Spoken languages: 
+## Spoken languages
 - English (C1)
 - German (C1)
 - Czech (B2)
@@ -137,8 +134,6 @@ Spoken languages:
 
 ## Hobbies and private interests
 
-- Hiking, mountaineering, rock climbing
-  
-- Learning about various topics
-  
+- Hiking, mountaineering, ski touring, rock climbing  
+- Learning about various topics  
 - Playing ukulele and guitar
