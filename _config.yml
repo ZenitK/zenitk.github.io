@@ -32,7 +32,7 @@ github: 'ZenitK'
 medium: '@zenit.kovacevic'
 #instagram: 'username'
 #pinterest: 'username'
-linkedin: 'zenit-kovačević-16754a72'
+linkedin: 'zenit-kovacevic'
 #producthunt: '@username'
 #quora: 'username'
 
@@ -57,6 +57,7 @@ plugins_dir:
 
 plugins:
   - jemoji  
+  - jekyll-target-blank
 
 # Pagination
 paginate: 5
