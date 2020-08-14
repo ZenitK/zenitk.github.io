@@ -5,9 +5,8 @@ title: Curriculum Vitae
 
 # Contact
 
-Phone Number: <a href="tel:0041779363659">+41 77 936 36 59</a>
-
-Email: zenitkovacevic >AT< gmail com
+- Phone Number: **<a href="tel:0041779363659">+41 77 936 36 59</a>**
+- Email: **zenitkovacevic @ gmail dot com**
 
 # Employment
  
