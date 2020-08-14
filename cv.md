@@ -88,7 +88,7 @@ travel and expense management (SAAS)
 
 **[Elasticsearch - Learning To Rank - Basics](https://badgr.com/public/assertions/F6Am_S5ISKqwLLh1P_kaKg){:target="_blank"}**
 
-**Elasticsearch Developer [I](assets/cv/esI.png) and [II](assets/cv/esII.png)**
+**Elasticsearch Developer [I](assets/cv/es1.pdf) and [II](assets/cv/es2.pdf)**
 
 **[Text Retrieval and Search Engines](https://www.coursera.org/account/accomplishments/verify/7QUR5YV5NXX7)**
 
