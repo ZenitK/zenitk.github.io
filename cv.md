@@ -84,7 +84,7 @@ travel and expense management (SAAS)
 
 ### Certificates
 
-**[NLP with Deep Learning at Stanford Center for Professional Development (ongoing, expected certificate on August 23rd, 2020)](https://online.stanford.edu/courses/xcs224n-natural-language-processing-deep-learning)**
+**[NLP with Deep Learning at Stanford Center for Professional Development](assets/cv/30114221_SCPDRecordofCompletion.pdf)**
 
 **[Elasticsearch - Learning To Rank - Basics](https://badgr.com/public/assertions/F6Am_S5ISKqwLLh1P_kaKg){:target="_blank"}**
 
