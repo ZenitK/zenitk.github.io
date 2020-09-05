@@ -6,7 +6,7 @@ title: CV - Zenit Kovačević
 # Contact
 
 - Phone Number: **<a href="tel:0041779363659">+41 77 936 36 59</a>**
-- Email: **zenitkovacevic@gmail.com**
+- Email: **ZenitKovacevic AT gmail DOT com**
 
 # Employment
  
@@ -39,48 +39,33 @@ Working in a small team in private banking on a wide array of tasks.
 
 - Fullstack developer for a complex **AngularJS / TypeScript / MVC** web application for document digitization. My main focus was on building a customizable PDF viewer for multiple documents at once.
 
-- REST API development for ad-hoc data delivery to various bank
-systems.
+- REST API development for ad-hoc data delivery to various bank systems.
 
 ### Technical Consultant - Allgeier AG
 **October 2014 - December 2016** Zurich, Switzerland
 
-Involved as a Software Developer, mainly Web Applications in private banking:
+Involved as a Fullstack Software Developer, mainly Web Applications in private banking:
 
 - Development, architecture, and design of a new **AngularJS / .NET Web API** for searching and displaying release management tickets in the form of Gantt diagrams
   
 - Development of a windows service in **C#** for synchronization of tickets
-between **JIRA** and **IBM Lotus Notes** through **REST** and **SOAP**
+between **JIRA** and **IBM Lotus Notes** through **REST** and **SOAP**.
 
-- Maintenance and further development of a legacy **ASP.NET/jQuery** Workflow web application for cooperation between compliance and the legal department
+- Maintenance and further development of a legacy **ASP.NET / jQuery** Workflow web application for cooperation between compliance and the legal department.
   
-- Re-styling of a large HR Web Application to “corporate style” with Bootstrap and **LESS**, converting existing **JavaScript** code to **TypeScript**
+- Re-styling of a large HR Web Application to “corporate style” with Bootstrap and **LESS**, converting existing **JavaScript** code to **TypeScript**.
 
 
 ### Junior Software Engineer - Emineo AG
 **August 2013 - September 2014** Zurich, Switzerland
 
-Project-based development of medium to large-sized applications for customers in the healthcare and public administration sector. 
-
-- Creation of a synchronization service between **Jira** and **Redmine**
-
-- Frontend Developer for a new solution for managing business partner data for hospitals, mainly with **JSF/PrimeFaces**
-
-- Modernizing of an e-shop for Meteorological Data. Upgrade security mechanisms and libraries (**Hibernate**, **Spring**).
-
-- 3rd level support for a large scale wholesale web application for car parts
+Project-based development in Java of medium to large-sized applications for customers in the healthcare and public administration sector. 
 
 ### Intern Software Developer - Concur Technologies
 **July 2012 - January 2013** Prague, Czech Republic
 
-Implementation of new functionalities in an extensive legacy web
-application in various languages (**VBScript**, **C#**, **JavaScript**, **XSLT**) for
-travel and expense management (SAAS)
-
-- Creating tools for internal use and windows services
-- Maintenance and 3rd level support
-
-<br class="page-break" />
+Implementation of new functionalities in an extensive legacy web application in various languages (**VBScript**, **C#**, **JavaScript**, **XSLT**) for
+travel and expense management (SAAS).
 
 # Education
 
