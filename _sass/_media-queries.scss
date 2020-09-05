@@ -355,3 +355,37 @@
     font-size: 1.11111rem;
   }
 }
+
+.page-break{
+  display: none;
+}
+
+@media print {
+
+  @page { size: auto;  margin: 15mm; }
+
+  // Hide site header and footer
+  #masthead, #colophon{
+    display: none;
+  }
+
+  .inner-wide{
+    max-width: none;
+  }
+
+  article span {
+    display: block;
+  }
+
+  p, ul, ol {
+    margin: 0 0 0.66667em;
+  }
+
+  h1, h3 {
+    font-size: 1.66rem;
+  }
+
+  .page-break{   
+    page-break-after: always;
+  }
+}

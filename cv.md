@@ -6,7 +6,7 @@ title: CV - Zenit Kovačević
 # Contact
 
 - Phone Number: **<a href="tel:0041779363659">+41 77 936 36 59</a>**
-- Email: **zenitkovacevic @ gmail dot com**
+- Email: **zenitkovacevic@gmail.com**
 
 # Employment
  
@@ -25,7 +25,7 @@ Working as a Fullstack Developer in a small, agile, cross-functional search team
 
 - Solution Architect for a data pipeline from a monolithic **SQL Server** to **Elasticsearch**
 
-- Implementing frontend features with a **React.js** and a **Node / GraphQl** layer inbetween
+- Implementing frontend features with a **React.js** and a **Node / GraphQl** layer in-between
 
 - Organizing internal Workshops and supporting other teams with **Elasticsearch** for various use-cases
 
@@ -35,9 +35,9 @@ Working as a Fullstack Developer in a small, agile, cross-functional search team
 
 Working in a small team in private banking on a wide array of tasks.  
 
-- Data migration of HR data from SAP to WorkDay through **MSSQL / T-SQL**, planning, development and deployment of windows services in **.NET / C#** for the integration.
+- Data migration of HR data from SAP to WorkDay through **MSSQL / T-SQL**, planning, development, and deployment of windows services in **.NET / C#** for the integration.
 
-- Fullstack developer for a complex **AngularJS / TypeScript / MVC** web application for document digitization. My main focus was building a customizable PDF viewer for multiple documents at once.
+- Fullstack developer for a complex **AngularJS / TypeScript / MVC** web application for document digitization. My main focus was on building a customizable PDF viewer for multiple documents at once.
 
 - REST API development for ad-hoc data delivery to various bank
 systems.
@@ -47,7 +47,7 @@ systems.
 
 Involved as a Software Developer, mainly Web Applications in private banking:
 
-- Development,architecture and design of a new **AngularJS / .NET Web API** for searching and displaying release management tickets in the form of hantt diagrams
+- Development, architecture, and design of a new **AngularJS / .NET Web API** for searching and displaying release management tickets in the form of Gantt diagrams
   
 - Development of a windows service in **C#** for synchronization of tickets
 between **JIRA** and **IBM Lotus Notes** through **REST** and **SOAP**
@@ -60,17 +60,17 @@ between **JIRA** and **IBM Lotus Notes** through **REST** and **SOAP**
 ### Junior Software Engineer - Emineo AG
 **August 2013 - September 2014** Zurich, Switzerland
 
-Project-based development of medium to large sized applications for customers in the healthcare and public administration sector. 
+Project-based development of medium to large-sized applications for customers in the healthcare and public administration sector. 
 
 - Creation of a synchronization service between **Jira** and **Redmine**
 
 - Frontend Developer for a new solution for managing business partner data for hospitals, mainly with **JSF/PrimeFaces**
 
-- Modernizing of an e-shop for Meteorological Data. Upgrade of security mechanisms and libraries (**Hibernate**, **Spring**).
+- Modernizing of an e-shop for Meteorological Data. Upgrade security mechanisms and libraries (**Hibernate**, **Spring**).
 
 - 3rd level support for a large scale wholesale web application for car parts
 
-## Intern Software Developer - Concur Technologies
+### Intern Software Developer - Concur Technologies
 **July 2012 - January 2013** Prague, Czech Republic
 
 Implementation of new functionalities in an extensive legacy web
@@ -79,6 +79,8 @@ travel and expense management (SAAS)
 
 - Creating tools for internal use and windows services
 - Maintenance and 3rd level support
+
+<br class="page-break" />
 
 # Education
 
@@ -91,7 +93,6 @@ travel and expense management (SAAS)
 **Elasticsearch Developer [I](assets/cv/es1.pdf) and [II](assets/cv/es2.pdf)**
 
 **[Text Retrieval and Search Engines](https://www.coursera.org/account/accomplishments/verify/7QUR5YV5NXX7)**
-
 
 ### Bachelor Degree in Software Engineering and Management
 **September 2009 - February 2012** 
@@ -108,9 +109,9 @@ Czech Technical University in Prague, Faculty of Electrical Engineering
 
 **Bachelor Thesis:** *Testing of drivers through games*
 
-Goal of the thesis was to develop a 3d game/system that gathers data about
+The goal of the thesis was to develop a 3D game/system that gathers data about
 the driving behavior (speed, accidents. compliance with traffic law) and exports
-it in various formats for further analysis, primarily for medical purposes. The game was developed with Microsoft XNA in C#.
+it in various formats for further analysis, primarily for medical purposes. The game was developed with **Microsoft XNA** in **C#**.
 
 ### Czech Language School, Institute for Language and Preparatory Studies
 **September 2008 - June 2009** 
@@ -124,15 +125,11 @@ it in various formats for further analysis, primarily for medical purposes. The 
 - Residence: **Schlieren, Kanton Zurich, Switzerland**
 - Residence Permit: **C - permanent residence**
 - Nationality: **Bosnia & Herzegowina**
-
-## Spoken languages
-- English (C1)
-- German (C1)
-- Czech (B2)
-- Bosnian (native)
+- Spoken Languages: **English (C1), German (C1), Czech (B2), Bosnian (native)**
 
 ## Hobbies and private interests
 
 - Hiking, mountaineering, ski touring, rock climbing  
 - Learning about various topics  
 - Playing ukulele and guitar
+- All about 3rd wave coffee
