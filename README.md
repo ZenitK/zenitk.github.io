@@ -94,6 +94,12 @@ Add the following code into your post/page markdown and change its attributes ac
 
 To set up Jekyll on local machine please follow the official documentation that can be found here -> https://jekyllrb.com/docs/.
 
+### 6a. Run
+
+```bash
+bundle exec jekyll serve
+```
+
 ### 7. Deployment
 
 Sites built using Jekyll can be deployed in a large number of ways due to the static nature of the generated output. Here are some of the most common ways:

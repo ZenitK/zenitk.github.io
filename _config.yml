@@ -70,6 +70,10 @@ permalink: /:title
 # Other
 markdown: kramdown
 
+kramdown: 
+  input: GFM
+  syntax_highlighter: rouge
+  
 # Sass
 sass:
   sass_dir: _sass
