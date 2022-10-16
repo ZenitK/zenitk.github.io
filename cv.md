@@ -10,8 +10,11 @@ title: CV - Zenit Kovačević
 
 # Employment
  
+### Search - Backend Software Engineer - RoonLabs
+**January 2021 - now** Zurich, Switzerland
+
 ### (Senior) Software Engineer - DigitecGalaxus AG
-**October 2017 - now** Zurich, Switzerland
+**October 2017 - December 2020** Zurich, Switzerland
 
 Working as a Fullstack Developer in a small, agile, cross-functional search team on the [biggest e-commerce platform](https://www.galaxus.ch/){:target="_blank"} in Switzerland.
 
