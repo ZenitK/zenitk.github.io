@@ -3,7 +3,6 @@ layout: post
 title: 'Stage Code Chunks In GIT CLI'
 tags: [GIT]
 featured_image_thumbnail: /assets/images/posts/2023/git/Git-Logo-2Color.png
-featured_image: /assets/images/posts/2023/git/Git-Logo-2Color.png
 description: 'Stage Code Hunks In GIT CLI'
 category: GIT
 ---
