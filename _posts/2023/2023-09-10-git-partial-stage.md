@@ -2,7 +2,7 @@
 layout: post
 title: 'Stage Code Chunks In GIT CLI'
 tags: ['GIT', 'GIT CLI']
-# featured_image_thumbnail: assets/images/posts/2020/hello-world/hello-world-min.jpg
+featured_image_thumbnail: assets/images/posts/2023/git/Git-Logo-2Color.png
 # featured_image: assets/images/posts/2020/hello-world/hello-world-min.jpg
 ---
 
