@@ -1,9 +1,11 @@
 ---
 layout: post
 title: 'Stage Code Chunks In GIT CLI'
-tags: ['GIT', 'GIT CLI']
-featured_image_thumbnail: assets/images/posts/2023/git/Git-Logo-2Color.png
-# featured_image: assets/images/posts/2020/hello-world/hello-world-min.jpg
+tags: [GIT]
+featured_image_thumbnail: /assets/images/posts/2023/git/Git-Logo-2Color.png
+featured_image: /assets/images/posts/2023/git/Git-Logo-2Color.png
+description: 'Stage Code Hunks In GIT CLI'
+category: GIT
 ---
 
 Let's say you've made way too many changes that you don't want to place in the same commit, and these changes are mixed up in the same file. The GIT CLI supports adding of partial hunks interactively. 
@@ -28,3 +30,5 @@ For each hunk, you'll be presented with a set of options:
 - `s` - split the current hunk into smaller hunks
 - `e` - manually edit the current hunk
 - `?` - print the help
+
+The GIT documentation can be found here https://git-scm.com/docs/git-add#Documentation/git-add.txt--p
