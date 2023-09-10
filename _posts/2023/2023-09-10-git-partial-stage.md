@@ -30,4 +30,4 @@ For each hunk, you'll be presented with a set of options:
 - `e` - manually edit the current hunk
 - `?` - print the help
 
-The GIT documentation can be found here https://git-scm.com/docs/git-add#Documentation/git-add.txt--p
+The GIT documentation can be found [here](https://git-scm.com/docs/git-add#Documentation/git-add.txt--p)
