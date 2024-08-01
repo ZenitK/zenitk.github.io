@@ -11,7 +11,7 @@ title: CV - Zenit Kovačević
 # Employment
  
 ### Search - Backend Software Engineer - RoonLabs
-**January 2021 - now** Zurich, Switzerland
+**January 2021 - now** Biel, Switzerland
 
 ### (Senior) Software Engineer - DigitecGalaxus AG
 **October 2017 - December 2020** Zurich, Switzerland
@@ -74,6 +74,8 @@ travel and expense management (SAAS).
 
 ### Certificates
 
+**[DeepLearning.AI Natural Language Processing Specialization](https://coursera.org/share/9848ecc0ed7128e4d9ac4f9298b3c900)**
+
 **[NLP with Deep Learning at Stanford Center for Professional Development](assets/cv/30114221_SCPDRecordofCompletion.pdf)**
 
 **[Elasticsearch - Learning To Rank - Basics](https://badgr.com/public/assertions/F6Am_S5ISKqwLLh1P_kaKg){:target="_blank"}**
@@ -110,10 +112,10 @@ it in various formats for further analysis, primarily for medical purposes. The 
 ## Personal Information
 
 - Date of birth: **6th July 1989**
-- Residence: **Schlieren, Kanton Zurich, Switzerland**
+- Residence: **Biel, Kanton Bern, Switzerland**
 - Residence Permit: **C - permanent residence**
-- Nationality: **Bosnia & Herzegowina**
-- Spoken Languages: **English (C1), German (C1), Czech (B2), Bosnian (native)**
+- Nationality: **Bosnia & Herzegovina**
+- Spoken Languages: **English (C1), German (C1), Czech (B2), French (B1), Bosnian (native)**
 
 ## Hobbies and private interests
 
