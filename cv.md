@@ -84,8 +84,8 @@ travel and expense management (SAAS).
 
 **[Text Retrieval and Search Engines](https://www.coursera.org/account/accomplishments/verify/7QUR5YV5NXX7)**
 
-### Bachelor Degree in Software Engineering and Management
-**September 2009 - February 2012** 
+### Bachelor Degree in Software Engineering and Management in Prague, Czechia
+**September 2009 - February 2012**
 
 Czech Technical University in Prague, Faculty of Electrical Engineering
 
@@ -103,10 +103,10 @@ The goal of the thesis was to develop a 3D game/system that gathers data about
 the driving behavior (speed, accidents. compliance with traffic law) and exports
 it in various formats for further analysis, primarily for medical purposes. The game was developed with **Microsoft XNA** in **C#**.
 
-### Czech Language School, Institute for Language and Preparatory Studies
+### Czech Language School, Institute for Language and Preparatory Studies in Poděbrady, Czechia
 **September 2008 - June 2009** 
 
-### Business High School, Sarajevo
+### Business High School in Sarajevo, Bosnia & Herzegovina
 **September 2008 - June 2009** 
 
 ## Personal Information
