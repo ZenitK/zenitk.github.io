@@ -2,7 +2,7 @@
 <article class="post post-featured has-image">
     <div class="post-inside">
         {% if post.featured_image %}
-        <a href="{{ post.url | absolute_url }}" class="post-thumbnail"><img src="{{ post.featured_image | prepend: site.baseurl }}"
+        <a href="{{ site.baseurl }}{{ post.url }}" class="post-thumbnail"><img src="{{ post.featured_image | prepend: site.baseurl }}"
                 alt="{% if post.featured_image_alt %}{{ post.featured_image_alt }}{% else %}{{ post.title }}{% endif %}"></a>
         {% endif %}
         <header class="post-header">

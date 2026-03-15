@@ -1,127 +1,125 @@
-# Royce Jekyll Theme v1.1.0
+# Zenit Kovačević Blog
 
-[Theme Live Demo](https://royce.netlify.com/)
+Personal Jekyll blog for [zenitk.com](https://www.zenitk.com), focused on information retrieval, data analysis, music, and software engineering.
 
-## Features
+## Stack
 
-* Mobile-ready
-* Contact form built-in 
-* Social icons built-in
-* Social sharing built-in
-* Mailchimp subscription form
-* Code Syntax Highlight with [Prism.js](https://prismjs.com/)
-* Support for Disqus comments
-* Simple Jekyll search [Simple Jekyll Search](https://github.com/christian-fei/Simple-Jekyll-Search)
+- Jekyll
+- GitHub Pages gem bundle
+- Sass partials in `_sass/`
+- Jekyll plugins:
+  - `jekyll-paginate`
+  - `jekyll-seo-tag`
+  - `jekyll-sitemap`
+  - `jekyll-target-blank`
+  - `jemoji`
 
-## Getting Started
+## Local Development
 
-**Table of Contents**
+Install dependencies:
 
-* 1. Theme Configuration
-* 2. Contact form setings
-* 3. Social Links
-* 4. Site Navigation
-* 5. Images
-* 6. Local Installation
-* 7. Deployment
-* 8. Support
+```bash
+bundle install
+```
 
-### 1. Theme Configuration
-
-The theme configuration options can be found within the **_config.yml** file. More information about Jekyll configuration can be found in the [Jekyll documentation](https://jekyllrb.com/docs/configuration/).
-
-* name - the title of your blog, shown in the page and description areas.
-* description - the description of your site for social meta tag, search engines, and feed.xml.
-* logo - the image for site logo.
-* author-image - the author profile image, shown in the sidebar/header intro section. The author image can be found in the royce/assets/images/authorimage.jpg location.
-* author-greetings - used in the home page for the text intro section.
-* favicon - the icon for your site.
-* baseurl - the subpath of your site, e.g. /blog, for generating urls. If baseurl is set, you will need to prepend the baseurl to these settings: author image, site navigation, post images.
-* production_url - the base hostname and protocol of your site for where absolute urls are needed.
-* disqus - your Disqus shortname. Enter the Disqus shortname here if you wish to have Disqus comments enabled, leave blank to disable comments.
-* mailchimp_url - your form action URL for MailChimp newsletter signup form.
-
-### 2. Contact form setings
-To make contact form work make sure you have defined "email: youremail@email.com" in _config.yml file and verify your form on formspree.io.
-
-* email - email used for contact form.
-* contact_page_description: - description used in contact form page (contact.html).
-* thankyou_page_description - description used in thank you page (thank-you.html).
-
-### 3. Social Links
-
-To enable social links on your blog simply enter your social profile username, for example, twitter: "justgoodthemes" . If a field is left blank, the social icon will not be shown.
-
-### 4. Site Navigation
-
-The site navigation can be found in the **_config.yml** file. To add a page to the site navigation simply add your new page in the markdown format (e.g. newpage.md) in the theme root folder. Next edit your navigation menu located in **_config.yml** file on line 37. To add a new item to the navigation you have to add the item name and url. For example:
-
-~~~~
-navigation:
-- text: New Page
-url: /newpage/
-~~~~
-
-### 5. Images
-
-Images for pages are located in the royce/assets/images folder and images for posts are located in the royce/assets/images/posts directory.
-
-#### Image With Caption
-
-Within your blog posts you can include captions for images. This requires using some HTML markup.
-
-The example below illustrates how to include an image with a caption in a blog post:
-
-~~~~
-{% include image-caption.html imageurl="/images/posts/Apple-Watch-In-Car.jpg" 
-title="Apple Super" caption="supertest" %}
-~~~~
-
-Add the following code into your post/page markdown and change its attributes accordingly.
-
-#### Full Width Image With Caption
-
-To have wide images in posts or pages simply add #wide word with the hashtag at the end of image path like in the example below:
-
-~~~~
-{% include image-caption.html imageurl="/images/posts/Apple-Watch-In-Car.jpg#wide" 
-title="Apple" caption="This is caption" %}
-~~~~
-
-Add the following code into your post/page markdown and change its attributes accordingly.
-
-### 6. Local Instalation
-
-To set up Jekyll on local machine please follow the official documentation that can be found here -> https://jekyllrb.com/docs/.
-
-### 6a. Run
+Run the site locally:
 
 ```bash
 bundle exec jekyll serve
 ```
 
-### 7. Deployment
+Build the static site:
 
-Sites built using Jekyll can be deployed in a large number of ways due to the static nature of the generated output. Here are some of the most common ways:
+```bash
+bundle exec jekyll build
+```
 
-#### Manual Deployment
+The generated site is written to `_site/`.
 
-Jekyll generates your static site to the **_site** directory by default. You can transfer the contents of this directory to almost any hosting provider to get your site live. Here are some manual ways of achieving this:
+## Content Structure
 
-##### Netlify
+- `_posts/` contains blog posts
+- `about.md`, `cv.md`, `contact.html` contain top-level pages
+- `_layouts/` contains Jekyll page and post layouts
+- `_includes/` contains shared partials
+- `_sass/` and `assets/css/style.scss` define the visual system
+- `assets/images/` contains author, page, and post imagery
 
-This theme is prepared to be hosted on [Netlify](https://www.netlify.com/). All you need to do is create a new private repository on GitHub or GitLab. Upload the theme to the repository and link your repo to Netlify. Please check [this link](https://www.netlify.com/blog/2015/10/28/a-step-by-step-guide-jekyll-3.0-on-netlify/#step-2-link-to-your-github) with the step by step guidelines.
+## Configuration
 
-##### FTP
+Main site configuration lives in [`_config.yml`](/Users/zenit/Blog/zenitk.github.io/_config.yml).
 
-Most traditional web hosting providers let you upload files to their servers over FTP. To upload a Jekyll site to a web host using FTP, run the jekyll build command and copy the contents of the generated **_site** folder to the root folder of your hosting account. This is most likely to be the httpdocs or public_html folder on most hosting providers.
+Important fields:
 
-##### Amazon S3
+- `name`: site title
+- `description`: sidebar descriptor
+- `author.image`: avatar shown in the sidebar
+- `author.greetings`: homepage hero headline and intro
+- `navigation`: main nav items
+- `url`: production domain used for canonical and social metadata
+- `baseurl`: subpath support if the site is ever hosted below a root domain
+- `formspree`: contact form endpoint
 
-If you want to host your site on Amazon S3, you can do so by using the [s3_website application](https://github.com/laurilehmijoki/s3_website). It will push your site to Amazon S3 where it can be served like any web server, dynamically scaling to almost unlimited traffic.
+## Authoring Notes
 
-### 8. Support
+Create a new post in `_posts/YYYY/YYYY-MM-DD-title.md` with front matter similar to:
 
-The documentation included provides all the information you need to get started with the theme. However, if you have any questions you can email us at support@justgoodthemes.com, and we will be happy to help you.
+```yaml
+---
+layout: post
+title: My Post Title
+featured_image: /assets/images/posts/2026/example/example.jpg
+tags:
+  - tag-one
+  - tag-two
+---
+```
 
-*Also, if you have any bug reports, or feature requests, please let us know!*
+Featured posts can be highlighted on the homepage with:
+
+```yaml
+featured: true
+```
+
+## Images
+
+Page and post images live in `assets/images/`.
+
+For captioned images inside markdown content:
+
+```liquid
+{% include image-caption.html imageurl="/assets/images/example.jpg" title="Title" caption="Caption" %}
+```
+
+For wide images inside posts:
+
+```liquid
+{% include image-caption.html imageurl="/assets/images/example.jpg#wide" title="Title" caption="Caption" %}
+```
+
+Note: wide/full image breakout styling is intended for posts. Static pages such as About are constrained back to a normal content width.
+
+## Linking
+
+Internal navigation should generally use relative links via `{{ site.baseurl }}`.
+
+Absolute URLs are still used for SEO metadata in the default layout. This avoids local development links unexpectedly redirecting to production while keeping canonical and Open Graph tags correct.
+
+## Deployment
+
+This repository includes `netlify.toml`, but it can also be deployed anywhere Jekyll static output is supported.
+
+Typical deployment flow:
+
+1. Run `bundle exec jekyll build`
+2. Deploy the generated `_site/` output or connect the repository to your hosting provider
+
+## Maintenance
+
+Before committing changes, run:
+
+```bash
+bundle exec jekyll build
+```
+
+That catches Liquid, config, and Sass regressions quickly.

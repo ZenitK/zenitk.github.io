@@ -3,6 +3,15 @@
  * ----------------------------------------------------------------------------
  */
 html {
+  --bg-main: #f6efe5;
+  --bg-soft: #fffaf4;
+  --bg-panel: rgba(255, 250, 244, 0.82);
+  --bg-panel-strong: rgba(255, 250, 244, 0.94);
+  --line-strong: rgba(27, 36, 48, 0.12);
+  --shadow-soft: 0 20px 60px rgba(41, 52, 66, 0.12);
+}
+
+html {
   font-family: $font-primary;
   font-size: 112.5%;
   height: 100%;
@@ -10,7 +19,10 @@ html {
 }
 
 body {
-  background: #fff;
+  background:
+    radial-gradient(circle at top left, rgba(214, 109, 49, 0.18), transparent 32%),
+    radial-gradient(circle at top right, rgba(77, 122, 162, 0.18), transparent 28%),
+    linear-gradient(180deg, #f4eadf 0%, #f7f1e8 38%, #f8f6f2 100%);
   color: $gray;
   line-height: 1.66667;
 }
@@ -18,8 +30,8 @@ body {
 a {
   color: $color-accent;
   text-decoration: underline;
-  -webkit-transition: background .3s ease, color .3s ease;
-  transition: background .3s ease, color .3s ease;
+  -webkit-transition: background .3s ease, color .3s ease, border-color .3s ease, transform .3s ease;
+  transition: background .3s ease, color .3s ease, border-color .3s ease, transform .3s ease;
 }
 
 a:hover {
@@ -278,7 +290,10 @@ input[type="submit"],
 input[type="button"],
 input[type="reset"],
 a.button {
-  background: $gray-darkest;
+  background: linear-gradient(135deg, $gray-darkest, $gray-dark);
+  border: 1px solid transparent;
+  border-radius: 999px;
+  box-shadow: 0 12px 30px rgba(27, 36, 48, 0.18);
   border: 0;
   box-sizing: border-box;
   color: #fff;
@@ -306,8 +321,9 @@ input[type="reset"]:focus,
 input[type="reset"]:active,
 a.button:hover,
 a.button:focus {
-  background: $color-accent;
+  background: linear-gradient(135deg, $color-accent, #c9493d);
   outline: 0;
+  transform: translateY(-1px);
 }
 
 .gh-subscribe-form {

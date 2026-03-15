@@ -5,7 +5,7 @@
                 datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%B %-d, %Y" }}</time>
         </div><!-- .post-meta -->
         <h2 class="post-title">
-            <a href="{{ post.url | absolute_url }}" rel="bookmark">{{ post.title }}</a>
+            <a href="{{ site.baseurl }}{{ post.url }}" rel="bookmark">{{ post.title }}</a>
         </h2>
     </header><!-- .post-header -->
     <div class="post-content">
@@ -16,5 +16,6 @@
             {% unless forloop.last %} {% endunless %}{% endfor %}
         </p>
         {% endif %}
+        <p class="post-cta"><a href="{{ site.baseurl }}{{ post.url }}" rel="bookmark">Read article</a></p>
     </div><!-- .post-content -->
 </article>

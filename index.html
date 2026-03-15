@@ -2,12 +2,40 @@
 layout: default
 title: Home
 ---
+{% assign latest_post_ts = site.posts.first.date | date: '%s' | plus: 0 %}
+{% assign now_ts = site.time | date: '%s' | plus: 0 %}
+{% assign recency_window = 7948800 %}
+{% assign recent_threshold = now_ts | minus: recency_window %}
 <main id="main" class="site-main">
 
 {% if page.url == "/" %}
-<div class="hero inner">
-    <p class="hero-text">{{ site.author.greetings }}</p>
-</div>        
+<section class="hero inner">
+    <div class="hero-panel">
+        <p class="hero-kicker">Information retrieval, data analysis, music, and feature discovery</p>
+        <div class="hero-text">{{ site.author.greetings }}</div>
+        <p class="hero-support">This is where I collect technical notes, implementation details, and a few stronger opinions shaped by building things carefully.</p>
+        <div class="hero-actions">
+            <a class="button" href="{{ site.baseurl }}/about">About Me</a>
+            <a class="hero-link" href="{{ site.baseurl }}/contact">Start a Conversation</a>
+        </div>
+    </div>
+    <div class="hero-signals">
+        <div class="hero-signal">
+            <span class="hero-signal-label">Posts</span>
+            <strong class="hero-signal-value">{{ site.posts.size }}</strong>
+        </div>
+        <div class="hero-signal">
+            <span class="hero-signal-label">Topics</span>
+            <strong class="hero-signal-value">{{ site.tags.size }}</strong>
+        </div>
+        {% if latest_post_ts >= recent_threshold %}
+        <div class="hero-signal">
+            <span class="hero-signal-label">Updated</span>
+            <strong class="hero-signal-value">{{ site.posts.first.date | date: "%b %Y" }}</strong>
+        </div>
+        {% endif %}
+    </div>
+</section>
 {% endif %}
 
 {% if page.url == "/" %}
@@ -25,7 +53,9 @@ title: Home
 <!-- Posts Index -->
 <div class="post-feed inner">
     {% if page.url == "/" %}
-    <div class="post-feed-title">Latest Articles</div>
+    <div class="post-feed-header">
+        <div class="post-feed-title">Latest Articles</div>
+    </div>
     {% endif %}
     <div class="post-feed inner-wide">
         {% for post in paginator.posts %}
@@ -39,5 +69,3 @@ title: Home
     {% include newsletter-box.html %}
 {% endif %}
 </main>
-
-
