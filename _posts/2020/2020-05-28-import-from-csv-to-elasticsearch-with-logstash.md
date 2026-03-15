@@ -241,7 +241,7 @@ Now that we finally have our logstash configuration file we can finally run it.
 
 If everything runs smoothly (disclaimer: usually it doesn't) you should see something like this:
 
-```
+```ruby
 
 . . .
 
@@ -262,7 +262,7 @@ If everything runs smoothly (disclaimer: usually it doesn't) you should see some
 ```
 
 Now we can do a check in Kibana:
-```JSON
+```json
 # check the data types
 GET hackernews_import/_mapping
 
