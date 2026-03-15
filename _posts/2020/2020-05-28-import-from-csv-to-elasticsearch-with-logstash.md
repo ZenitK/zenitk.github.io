@@ -262,7 +262,7 @@ If everything runs smoothly (disclaimer: usually it doesn't) you should see some
 ```
 
 Now we can do a check in Kibana:
-```json
+```
 # check the data types
 GET hackernews_import/_mapping
 
