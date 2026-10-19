@@ -42,6 +42,8 @@ navigation:
     url: /
   - text: About
     url: /about
+  - text: Tools
+    url: /tools
 #  - text: Style Guide
 #    url: /style-guide
   - text: Contact Me
